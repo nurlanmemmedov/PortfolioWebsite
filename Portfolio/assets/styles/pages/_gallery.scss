@@ -1,0 +1,31 @@
+#gallery{
+    .owl-gallery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 350px;
+        padding: 0 10px;
+        // border-radius: $radius;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            width: length;
+            border-radius: $radius;
+
+        }
+    }
+    .owl-nav{
+        margin: 20px 0;
+        text-align: center;
+        button{
+            margin: 0 5px;
+            &:hover{
+                animation: flickerAnimation .4s infinite;
+            }
+        }
+    }
+}

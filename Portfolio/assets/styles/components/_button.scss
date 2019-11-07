@@ -1,0 +1,14 @@
+.button-main-all{
+    background-color: black;
+    color: white;
+    transition: $main-transition;
+    // width: 100px !important;
+    width: max-content !important;
+    margin: 10px 0;
+    border: 1px solid white !important;
+    border-radius: $radius;
+    padding: 5px 15px;
+    &:hover{
+        background-color: rgb(117, 0, 0) !important;
+    }
+}

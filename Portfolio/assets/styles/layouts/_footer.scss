@@ -1,0 +1,19 @@
+#talk{
+    padding: 20px;
+    margin-top: 60px;
+    .content{
+        width: 100%;
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+               
+            }
+            &:hover i{
+                animation: wawe .4s infinite; 
+            }
+            
+        }
+    }
+}

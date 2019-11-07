@@ -1,0 +1,149 @@
+.head-img{
+    height: calc(100vh - 43px);
+    background-position-x: center;
+    .content{
+        align-content: space-around;
+        height: 600px;
+        padding: 60px 0;
+        .head-title{
+            margin: 15px 0;
+        }
+        h4{
+            color: black;
+        }
+        h5{
+            color: black;
+        }
+    }
+}
+#main-blog-page{
+    padding-bottom: 50px;
+    .blog-area{
+        h2{
+
+        }
+        p{
+            padding: 40px 0;
+            font-size: 20px;
+        }
+        span{
+            font-size: 24px;
+            font-weight: 600;
+            font-style: italic;
+        }
+        .img-area{
+            display: flex;
+            flex-wrap: wrap;
+            .image{
+                img{
+                    width: 100%;
+                    padding: 15px 0;
+                }
+            }
+        }
+        ul{
+            li{
+                padding: 10px 0;
+                .title{
+                    font-size: 36px;
+                }
+                .text{
+                    font-weight: 400;
+                }
+            }
+        }
+        .comments-area{
+            font-size: 14px;
+            .head-title{
+                margin: 40px 0;
+            }
+            .comment{
+                padding: 40px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .profil-img{
+                    border-radius: 100%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        border-radius: 100%;
+                    }
+                }
+                .text{
+                    .profil{
+                        display: flex;
+                        align-items: center;
+                        h5{
+
+                        }
+                        p{
+                            padding: 0;
+                            margin: 0;
+                            font-size: 16px;
+                            margin-left: 15px;
+                            color: $color-light;
+                        }
+                    }
+                    .comment-text{
+                        p{
+                            padding: 0;
+                            font-size: 16px;
+                            color: $color-light;
+                        }
+                    }
+                }
+            }
+            form{
+                div{
+                    // display: flex;
+                    
+                    label{
+                        width: 100%;
+                        padding: 5px 0;
+                        font-size: 16px;
+                    }
+                    input{
+                        width: 100%;
+                        background-color: lightgray;
+                        border: transparent;
+                        padding: 10px;
+                        border-radius: $radius;
+                        &:focus{
+                            outline: 0;
+                        }
+                    }
+                    .submit{
+                        background-color: black;
+                    }
+                    
+                    textarea{
+                        width: 100%;
+                        background-color: lightgray;
+                        border: transparent;
+                        border-radius: $radius;
+                        padding: 10px;
+                        &:focus{
+                            outline: 0;
+                        }
+                    }
+
+                }
+                .saving{
+                    display: flex;
+                    align-items: center;
+                    label{
+                        color: $color-light;
+                        font-size: 14px;
+                        width: 95%;
+                        margin: 0;
+                    }
+                    input{
+                        width: 5%;
+                    }
+                }
+            }
+        }
+    }
+}

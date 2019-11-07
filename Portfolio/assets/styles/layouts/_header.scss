@@ -1,0 +1,117 @@
+header{
+    position: sticky;
+    z-index: 238982;
+    left: 0;
+    top: 0;
+    transform: translateY(0px);
+    transition: $main-transition;
+.nav{
+    padding: 5px 0;
+    .brand{
+       
+        a{
+            text-decoration: none;
+        h3{
+        }
+    }
+    }
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        ul{
+            padding:0 20px;
+            margin-bottom: 0;
+            width: 85%;
+           list-style-type: none;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+            li{
+                cursor: pointer;
+                position: relative;
+                a{
+                    text-decoration: none;
+                }
+                }
+            }
+            .dark-mode{
+                width: 42px;
+                height: 18px;
+                border-radius: 10px;
+                background-color: grey;
+                display: flex;
+                align-items: center;
+                padding: 0 2px;
+                transition: $main-transition;
+                cursor: pointer;
+                .circul{
+                    background-color: white;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 100%;
+                    transition: $main-transition
+                }
+                &:hover{
+                    background-color: aqua;
+                }
+            }
+            .button{
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+                transition: $main-transition;
+            button{
+                border: transparent;
+                display: none;
+                align-items: center;
+                height: 30px;
+                width: 30px;
+               background-color: transparent;
+               transition: $main-transition;
+               cursor: pointer;
+                div{
+                    width: 1px;
+                    height: 20px;
+                    margin: 0 2px;
+                    background-color: black;
+                }
+            }
+        }
+            .page-part-black{
+                position: relative;
+                 &::before{
+                    width: 0;
+                    height: 3px;
+                    background-color: black;
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 24px;
+                    border-radius: 8px;
+                    transition: $main-transition;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+        }
+        .page-part-white{
+            position: relative;
+            &::before{
+               width: 0;
+               height: 3px;
+               background-color: white;
+               position: absolute;
+               content: "";
+               left: 0;
+               top: 24px;
+               border-radius: 8px;
+               transition: $main-transition;
+       }
+       &:hover::before{
+           width: 100%;
+       }
+        }
+    }
+}
+}
